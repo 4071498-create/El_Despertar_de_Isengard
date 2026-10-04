@@ -7,12 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="409dp"
-        android:layout_height="730dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+
 
         <Spinner
             android:id="@+id/tipo"
@@ -25,17 +20,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/identif"
-            android:layout_width="206dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="100dp"
-            android:ems="10"
-            android:inputType="text"
-            android:text="Identificador"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/identif"
+        android:layout_width="206dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Identificador"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
         <RadioGroup
             android:id="@+id/grupo"
@@ -50,14 +45,14 @@
                 android:id="@+id/boton1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RadioButton"
+                android:text="Armadura de Hierro"
                 tools:text="Armadura de Hierro" />
 
             <RadioButton
                 android:id="@+id/boton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RadioButton"
+                android:text="Escudo de Isengard"
                 tools:text="Escudo de Isengard" />
 
         </RadioGroup>
@@ -82,6 +77,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/ic_menu_send" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
